@@ -1,0 +1,48 @@
+<!-- One way databinding / String interpolation using {{ }}  -->
+
+<strong style="color: red;"> 1-Way data binding / String interpolation</strong>
+<br/>
+
+Server name is : {{serverName}} <br/>
+<!-- College name is : {{collegeName}} <br/>
+year is : {{year}} -->
+
+<hr/>
+
+<!-- Property Binding using [] -->
+<strong style="color: red;">Property Binding using [] </strong> <br/>
+
+<button class="btn btn-warning" [disabled]="flag">submit</button>
+
+<hr/>
+
+<!-- Event Binding using ()  -->
+
+<strong style="color: red;"> Event Binding using () </strong> <br/>
+
+<button type="submit" (click)="onClick()">Click Me!</button>
+<hr/>
+
+<!-- 2 Way data binding  -->
+
+<!-- [(ngModel)] -->
+<strong style="color: red;"> 2 Way data binding using [(ngModel)] </strong> <br/>
+
+Enter Name : <input type="text" [(ngModel)]="empname">
+<br/>
+Entered name is : {{empname}}
+
+<br/> <br/>
+
+Enter user name : <input type="text" [(ngModel)]="uname"> <br/>
+Enter password : <input type="number" [(ngModel)]="pwd"> 
+<br/>
+<button type="submit" (click)="onLogIn()">LogIn</button>
+<button type="submit" (click)="onClear()">Clear</button>
+<!-- <span> Entered user name is : {{uname}} and the password is : {{pwd}}</span> -->
+
+
+
+
+
+
